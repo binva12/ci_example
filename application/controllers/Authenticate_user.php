@@ -71,6 +71,16 @@
 			$this->load->view("pages/admin_page");
 		}
 
+		function list_all_users() {
+			$list_user = $this->authenticate_model->get_all_user();
+	
+			$data["all_users"] = $list_user;
+			$data["print_hello_world"] = "hello world";
+			$this->load->view("list_user", $data);
+			echo "<pre>";
+			print_r($data);
+		}
+
 		public function forgot_password(){
 			$this->load->view("pages/forgot_password_page");
 		}

@@ -37,6 +37,15 @@
 				return $result;
 			}	
 		}
+	
+		public function get_all_user(){
+
+			$this->db->select("*");
+			$this->db->from("tb_users");
+			$query = $this->db->get();
+
+			return $result = $query->result();
+		}
 	}
 
 ?>

@@ -57,7 +57,7 @@ $route['signup-process'] = 'authenticate_user/signup_process';
 $route['login-page'] = 'authenticate_user/login';
 $route['login-process'] = 'authenticate_user/login_process';
 $route['admin-page'] = 'authenticate_user/admin_process';
-
+$route['list-user'] = 'authenticate_user/list_all_users';
 
 $route['forgot-password'] = 'authenticate_user/forgot_password';
 $route['sent-email'] = 'authenticate_user/send_email';
